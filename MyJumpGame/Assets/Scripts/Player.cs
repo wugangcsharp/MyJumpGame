@@ -5,12 +5,15 @@ public class Player : MonoBehaviour
 {
     public static Player player ;
     Transform m_transform;
-    
+	AudioSource m_audioSource;
 
     /// <summary>
     /// 移动速度
     /// </summary>
     public float moveSpeed;
+
+	public AudioClip m_audioClip;
+
     Rigidbody2D _rigidbody2d;
 
     void Awake()
@@ -19,6 +22,7 @@ public class Player : MonoBehaviour
         player = GetComponent<Player>();
         _rigidbody2d = this.GetComponent<Rigidbody2D>();
         m_transform = this.transform;
+		m_audioSource = this.audio;
     }
 
     void Start()
@@ -37,7 +41,8 @@ public class Player : MonoBehaviour
         if (_collider2d.collider.CompareTag("ground"))
         {
             //如果撞到地板，则施加一个向上的力
-            _rigidbody2d.AddForce(new Vector2(0, 250));
+            _rigidbody2d.AddForce(new Vector2(0, 200));
+			m_audioSource.PlayOneShot(m_audioClip);
         }
     }
 }

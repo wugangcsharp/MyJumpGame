@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\default\PlayerAnimator.cs">
     <Files>
-      <File FileName="Assets\Scripts\EventList.cs" Line="18" Column="45" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="35" Column="5" />
-      <File FileName="Assets\Scripts\Player.cs" Line="31" Column="6" />
+      <File FileName="Assets\Scripts\default\PlayerAnimator.cs" Line="30" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
